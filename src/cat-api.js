@@ -14,7 +14,6 @@ const api = axios.create({
 export function fetchBreeds(url) {
   return api.get(url);
 }
-
 export function fetchCatByBreed(breedId) {
   const URL = 'images/search';
   return api.get(URL, {
